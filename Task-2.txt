@@ -1,12 +1,47 @@
 # Difference between Absolute and Relative positioning :-
 
+# Absolute and relative positioning are two fundamental concepts in CSS that allow you to precisely control the layout and positioning of elements on a web page.
+
 # Absolute positioning :- An element with position: absolute; will cause it to adjust its position with respect to its parent. If no parent is present, then it uses the document body as parent.
 
-# Synatx 
-position: absolute;
+# Absolute Positioning features :
+a). Element's Default Behavior :-
+# An element with absolute positioning is positioned relative to its nearest positioned ancestor (parent element) or, if none exist, relative to the initial containing block (usually the <html> element).
 
+b). Offset Properties :-
+# Like with relative positioning, you can use properties like top, bottom, left, and right to precisely position an element.
+
+c). Interaction with Sibling Elements :-
+# Elements with absolute positioning are taken out of the normal document flow. They do not affect the layout of sibling elements, and sibling elements do not affect their position.
+
+d). Interaction with Relative Positioning :-
+# If a child element is set to absolute positioning within a relatively positioned parent element, it will be positioned relative to the parent, not the document.
+
+# Scrolling Behavior :-
+# Absolute positioned elements do not move when the page is scrolled. They remain fixed in their specified position relative to the nearest positioned ancestor.
+
+# Synatx 
+  position: absolute;
 
 # Relative positioning :- Setting the top, right, bottom, and left properties of an element with position: relative; property will cause it to adjust from its normal position. The other objects or elements will not fill the gap.
 
+# Relative Positioning features :-
+
+a). Element's Default Behavior :-
+# An element with relative positioning is initially positioned relative to its normal position in the document flow.
+It will still take up space in the document flow, and other elements will be positioned as if it were in its default position.
+
+b). Offset Properties :-
+# When you apply relative positioning to an element, you can use properties like top, bottom, left, and right to offset it from its normal position.
+
+c). Interaction with Sibling Elements :-
+# Sibling elements are not affected by an element with relative positioning. They will be positioned as if the element with relative positioning is in its default position.
+
+d). Interaction with Absolute Positioning :-
+# If a child element is set to absolute positioning within a relatively positioned parent element, it will be positioned relative to the parent, not the document.
+
+e). Scrolling Behavior :-
+# If the page is scrolled, the element with relative positioning will move along with the rest of the page.
+
 # Syntax:
-position: relative;
+  position: relative;
